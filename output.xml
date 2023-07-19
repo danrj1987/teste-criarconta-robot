@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230718 21:38:16.282" rpa="false" schemaversion="4">
+<suite id="s1" name="TesteCoodesh" source="C:\Users\Daniel\TesteCoodesh\TesteBetaCoodesh\TesteCoodesh.robot">
+<test id="s1-t1" name="Caso de Teste 01: Carregar corretamente a homepage" line="5">
+<kw name="Acessar a homepage da Beta Coodesh" library="ResourceCoodesh">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230718 21:38:16.554" level="INFO">Opening browser 'chrome' to base url 'https://beta.coodesh.com/auth/signin'.</msg>
+<status status="PASS" starttime="20230718 21:38:16.553" endtime="20230718 21:38:23.627"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230718 21:38:23.628" endtime="20230718 21:38:23.638"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Entrar | Coodesh</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230718 21:38:23.652" level="INFO">Page title is 'Entrar | Coodesh'.</msg>
+<status status="PASS" starttime="20230718 21:38:23.639" endtime="20230718 21:38:23.652"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:16.552" endtime="20230718 21:38:23.652"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:16.551" endtime="20230718 21:38:23.653"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02: Criar conta" line="8">
+<kw name="Clicar no botão criar conta de usuário" library="ResourceCoodesh">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${BTN_CRIARCONTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 21:38:23.655" endtime="20230718 21:38:23.713"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${BTN_CRIARCONTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:23.714" level="INFO">Clicking element '//a[@class='chakra-button css-jm60sf'][contains(.,'Criar conta')]'.</msg>
+<status status="PASS" starttime="20230718 21:38:23.713" endtime="20230718 21:38:26.543"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:23.655" endtime="20230718 21:38:26.543"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:23.654" endtime="20230718 21:38:26.546"/>
+</test>
+<test id="s1-t3" name="Caso de Teste 03: Preencher form" line="11">
+<kw name="Digitar nome completo" library="ResourceCoodesh">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${NOME_COMPLETO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 21:38:26.553" endtime="20230718 21:38:26.644"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${NOME_COMPLETO}</arg>
+<arg>text=Zachary Garrett</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:26.645" level="INFO">Typing text 'Zachary Garrett' into text field 'field-6'.</msg>
+<status status="PASS" starttime="20230718 21:38:26.644" endtime="20230718 21:38:27.319"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:26.553" endtime="20230718 21:38:27.319"/>
+</kw>
+<kw name="Digitar email" library="ResourceCoodesh">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${EMAIL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 21:38:27.319" endtime="20230718 21:38:27.455"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${EMAIL}</arg>
+<arg>text=teste17@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:27.457" level="INFO">Typing text 'teste17@teste.com' into text field 'field-7'.</msg>
+<status status="PASS" starttime="20230718 21:38:27.456" endtime="20230718 21:38:28.793"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:27.319" endtime="20230718 21:38:28.794"/>
+</kw>
+<kw name="Digitar senha" library="ResourceCoodesh">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${SENHA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 21:38:28.795" endtime="20230718 21:38:28.830"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${SENHA}</arg>
+<arg>text=9638521@A123a#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:28.831" level="INFO">Typing text '9638521@A123a#' into text field 'field-8'.</msg>
+<status status="PASS" starttime="20230718 21:38:28.830" endtime="20230718 21:38:29.058"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:28.794" endtime="20230718 21:38:29.059"/>
+</kw>
+<kw name="Clicar aceitar politica de privacidade" library="ResourceCoodesh">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${RADIO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:29.064" level="INFO">Clicking element '(//span[contains(@class,'chakra-switch__thumb css-7roig')])[1]'.</msg>
+<status status="PASS" starttime="20230718 21:38:29.063" endtime="20230718 21:38:29.238"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:29.062" endtime="20230718 21:38:29.238"/>
+</kw>
+<kw name="Clicar no botão inscreva-se" library="ResourceCoodesh">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${INSCREVA_SE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:29.242" level="INFO">Clicking element '(//button[@type='submit'][contains(.,'Inscreva-se')])[1]'.</msg>
+<status status="PASS" starttime="20230718 21:38:29.240" endtime="20230718 21:38:29.624"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:29.239" endtime="20230718 21:38:29.624"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:26.552" endtime="20230718 21:38:29.643"/>
+</test>
+<test id="s1-t4" name="Caso de Teste 04: Dados pessoais" line="18">
+<kw name="Acessar pagina dados pessoais e preencher" library="ResourceCoodesh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 21:38:34.648" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230718 21:38:29.646" endtime="20230718 21:38:34.649"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${BACKEND}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 21:38:34.650" endtime="20230718 21:38:38.115"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${BACKEND}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 21:38:38.115" level="INFO">Clicking element '//div[@class='checkbox-outline__label d-flex flex-column justify-content-center mb-3 px-5 py-3 rounded'][contains(.,'Back-End Developer')]'.</msg>
+<status status="PASS" starttime="20230718 21:38:38.115" endtime="20230718 21:38:38.281"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:29.646" endtime="20230718 21:38:38.281"/>
+</kw>
+<status status="PASS" starttime="20230718 21:38:29.645" endtime="20230718 21:38:38.293"/>
+</test>
+<status status="PASS" starttime="20230718 21:38:16.284" endtime="20230718 21:38:38.302"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TesteCoodesh">TesteCoodesh</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
